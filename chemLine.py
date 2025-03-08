@@ -1,4 +1,3 @@
-# importing package
 import matplotlib.pyplot as plt
 
 
