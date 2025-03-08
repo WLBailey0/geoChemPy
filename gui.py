@@ -1,16 +1,16 @@
 import PySimpleGUI as sg
 import chemLine
 
-sg.theme('DarkAmber')  # Add a touch of color
-# All the stuff inside your window.
+sg.theme('DarkAmber') 
+
 layout = [[sg.Text('Some text on Row 1')],
           [sg.Text('SiO2%'), sg.InputText(key='-SI-'), sg.Text('Na20+K20%'), sg.InputText(key='-NAK-')],
           [sg.Button('Ok'), sg.Button('Submit')],
           [sg.Button('Cancel')]]
 
-# Create the Window
+
 window = sg.Window('Window Title', layout)
-# Event Loop to process "events" and get the "values" of the inputs
+
 user_values = []
 while True:
     event, values = window.read()
